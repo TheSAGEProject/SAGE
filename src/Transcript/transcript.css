@@ -1,0 +1,161 @@
+/* transcript.css */
+
+@font-face {
+    font-family: 'Offside';
+    src: url('../fonts/Offside-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'SudoVar';
+    src: url('../fonts/SudoVariable.ttf');
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    font-family: 'SudoVar';
+    flex-direction: column;
+}
+
+h3 {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 200;
+    position: relative;
+    margin-top: 70px;
+    font-family: 'Offside';
+    z-index: 1;
+}
+
+h2 {
+    color: white;
+    font-size: 19px;
+    text-align: center;
+    position: relative;
+    font-weight: 100;
+    margin-top: 35px;
+    transform: translateY(-40%);
+}
+
+.transcriptimage {
+    margin-top: 100px;
+    width: min(20vw, 225px);
+    display: block;
+    margin: 0px auto;
+    position: relative;
+}
+
+.symbol {
+    margin-top: 50px;
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #2E1F31;
+    opacity: 0.7;
+    height: 45px;
+    width: min(40vw, 350px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 15px;
+    z-index: 1;
+}
+
+button {
+    background: none;
+    color: white;
+    font-family: 'SudoVar';
+    font-size: 30px;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.file-input-container {
+    position: relative;
+    z-index: 2;
+}
+
+.file-input {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.custom-button,
+.upload-button {
+    display: inline-block;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: inherit;
+    z-index: 2;
+}
+
+.custom-button {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.upload-button {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.custom-button,
+.upload-button {
+    background-color: rgba(48, 77, 65, 0.36);
+    margin-top: 30px;
+}
+
+.custom-button:hover,
+.upload-button:hover {
+    background-color: rgba(48, 77, 65, 0.6);
+    border-color: none;
+}
+
+.button-container {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center items vertically */
+    flex-wrap: wrap; /* Allow items to wrap */
+
+}
+
+
+.file-name-container {
+    position: absolute;
+    margin-top: 10px; /* Position at the bottom */
+    left: 50%; /* Position at the horizontal center */
+    transform: translateX(-50%); /* Center the element horizontally */
+    z-index: 2;
+    text-align: center;
+    color: white;
+  }
+  
+
+
+.divider {
+    width: 1.5px; /* Adjust the width of the divider */
+    height: 36.5px; /* Adjust the height of the divider */
+    background-color: white; /* Color of the divider */
+    position: absolute; /* Position the divider relative to its closest positioned ancestor */
+    top: 50%; /* Position the divider vertically at the middle of the button container */
+    left: calc(50%); /* Position the divider horizontally at the center of the button container */
+    transform: translateY(-9%); /* Center the divider vertically */
+    z-index: 5;
+}
+
+.file-name-container {
+    text-align: center;
+  }
+  
+  .loading-text {
+    font-size: 25px; /* Adjust the font size as needed */
+  }

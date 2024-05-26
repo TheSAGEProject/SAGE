@@ -40,6 +40,7 @@ Have you ever asked your advisor a question only to wait weeks for a response? M
 * Expansion Team
   * Team Lead: Maruthi Eranki
     * Zain Mirza
+    * Aneesh Dara
     * Syed Kazmi
    
 * Design Team

@@ -9,8 +9,8 @@ var bucketName = "transcript-bucket-4-2-2024";
 
 var creds =
 {
-    accessKeyId: KEYID,
-    secretAccessKey: KEY,
+    
+    
 };
 
 // Make a name for an object to be uploaded

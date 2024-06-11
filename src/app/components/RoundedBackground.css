@@ -1,0 +1,28 @@
+
+
+.box {
+  box-sizing: border-box;
+  background-color: rgba(126, 126, 126, 0.7);
+  border-radius: 30px;
+  color: black;
+  width: 93.5%; /* Adjust width as needed */
+  height: 92.9%; /* Adjust height as needed */
+  opacity: 0.7;
+
+  /* Centering the box horizontally and vertically */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+body{
+  margin: 0;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: Arial, sans-serif;
+}
+

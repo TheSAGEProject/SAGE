@@ -1,0 +1,131 @@
+/*import Sudo Var font */
+@font-face {
+  font-family: 'Sudo Var';
+  src: url('https://fonts.cdnfonts.com/css/sudo-var');
+}
+
+/* Reset default styles */
+/* Targeting specific elements */
+.dp-header,
+.dp-header * {
+  margin-top: 20px;
+  padding: 0;
+}
+
+.floral-logo img {
+  margin-top: 50px;
+  margin-left: 10px;
+  width: 50px; /* Adjust the width as needed */
+}
+
+/* Main navigation styling */
+.dp-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #2e1f31;
+  padding: 30px;
+}
+
+/* Navbar list styles */
+#dp-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: 'fixed';
+  top:'0';
+  left: '0';
+  z-index: '999999';
+}
+
+#dp-navbar li {
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+}
+
+/* Navbar link styles */
+#dp-navbar li a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: white;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Change link color on hover */
+#dp-navbar li a:hover {
+  color: #bf81ef;
+}
+
+
+
+/* Brightness effect for images */
+#dp-navbar li a:hover img {
+  filter: brightness(100%);
+  transition: filter 0.3s ;
+}
+
+
+
+
+/* Container for navbar */
+.dp-navbar {
+  border-radius: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 7px;
+  position: 'fixed';
+  left: '0';
+
+}
+
+/* Image styles */
+.profileWhite,
+.degPWhite,
+.chatWhite {
+  width: 40px; /* Set the desired width */
+  height: auto; /* Maintain aspect ratio */
+  vertical-align: middle;
+  height: auto;
+}
+
+/* Text link styles */
+a {
+  text-decoration: none;
+}
+
+/* Larger text styles */
+.larger-text {
+  font-size: 32px; /* Adjust the size as needed */
+  
+}
+
+.advisabot{
+  margin-top: 55px;
+  margin-left: 15px;
+}
+
+/* Specific link styles */
+.chat-link,
+.degreeplan-link {
+  margin-left: 3px;
+  margin-right: 15px;
+  font-size: 40px; /* Adjusted font size for specific links */
+  display: flex;
+  align-items: center;
+}
+
+/* Margin for images */
+.chatWhite,
+.degPWhite {
+  margin: 5.5px;
+}
+
+/* Scale effect for images */
+.chatWhite {
+  transform: scale(1.05);
+}
+
+.profileWhite {
+  transform: scale(1.1);
+}

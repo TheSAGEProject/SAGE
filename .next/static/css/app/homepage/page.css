@@ -1,0 +1,277 @@
+/*!***********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./src/app/homepage/Home.css ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************/
+@font-face {
+  font-family: 'Offside';
+  src: url(/_next/static/media/Offside-Regular.e95d7b38.ttf);
+}
+
+
+@font-face{
+  font-family: 'SudoVar';
+  src: url(/_next/static/media/SudoVariable.2ea4e00e.ttf);
+}
+
+
+@font-face {
+  font-family: 'Maharlika';
+  src: url(/_next/static/media/Maharlika-Regular.0dfcdd99.ttf);
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url(/_next/static/media/Raleway-VariableFont_wght.1d8c655f.ttf);
+}
+
+h1 {
+  position: absolute;
+  top: min(40.6%);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: 'Maharlika';
+  font-weight: 1;
+  font-size: 12vw;
+}
+
+.homeh4 {
+  color: white;
+  font-family: 'Raleway';
+  font-size: min(2vw, 20px);
+  font-weight: 300;
+  z-index: 99;
+  position: absolute;
+  top: calc(50% + 30px);
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (min-width: 1025px) {
+  h1 {
+    top: 38%;
+    font-size: 140px;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Prevent scrolling */
+}
+
+
+.search-container {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  height: 6.2vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-container input[type="text"] {
+  padding: 1vw 0vw 1vw 2vw;
+  width: 47vw;
+  display: block;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  font-size: 20px;
+  outline: none;
+  font-family: 'SudoVar', sans-serif;
+  text-align: left;
+}
+
+.search-container input[type="text"]::placeholder {
+  font-family: 'SudoVar'; 
+  font-size: min(2.5vw, 20px);
+  color: rgba(0, 0, 0, 0.35);
+  text-align: left;
+}
+
+.search-container button {
+  position: absolute;
+  right: 5px;
+  transform: translateY(-500%);
+  padding-right: 6.2%;
+  border: none;
+  background: none;
+}
+
+
+.search-container button::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 2vw;
+  background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" width="36" height="31" viewBox="0 0 36 31"%3E%3Cpath d="M2.49811 4.12169L8.43298 14.5077C8.70983 14.9922 8.84825 15.2344 8.84825 15.5C8.84825 15.7656 8.70983 16.0078 8.43299 16.4923L2.49811 26.8783C1.25981 29.0453 0.640655 30.1289 1.12348 30.6662C1.6063 31.2035 2.74962 30.7033 5.03624 29.7029L33.3119 17.3323C35.1074 16.5468 36.0051 16.154 36.0051 15.5C36.0051 14.846 35.1074 14.4532 33.3118 13.6677L5.03624 1.2971C2.74962 0.296707 1.6063 -0.203492 1.12348 0.333828C0.640655 0.871147 1.25981 1.95466 2.49811 4.12169Z" fill="rgba(48, 77, 65, 0.56)" /%3E%3C/svg%3E');
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+
+@media screen and (min-width: 1025px) {
+  .search-container button::before {
+    width: 22px;
+   
+  }
+}
+
+
+.search-container button:hover::before {
+  filter: grayscale(100%) brightness(0);
+}
+
+/*!***************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./src/app/components/Navbar.css ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************/
+.header-container {
+  box-sizing: border-box;
+  background-color: rgba(48, 77, 65, 0.36); /* 36% opacity */
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  opacity: 0.7;
+  justify-content: center;
+  border-radius: 30px 30px 0px 0px;
+  color: black;
+  text-align: center;
+  width: 93.5vw;
+  height: 11.6vh;
+  position: fixed;
+  top: 9.3644%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  align-items: center;
+}
+.navbar-logo img {
+  width: 50px; /* Adjust the width as needed */
+}
+.navbar-links {
+  display: flex;
+}
+.navbar-icon {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin-right: 50px; /* Increase spacing between icons */
+  text-decoration: none;
+  color: #fff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'SudoVar';
+  align-items: center;
+  position: relative;
+  top: 25%;
+}
+.navbar-icon img {
+  width: 35px; /* Adjust icon size as needed */
+  margin-bottom: 0px; /* Adjust space between icon and text as needed */
+}
+@font-face {
+  font-family: 'Offside';
+  src: url(/_next/static/media/Offside-Regular.e95d7b38.ttf);
+}
+@font-face{
+  font-family: 'SudoVar';
+  src: url(/_next/static/media/SudoVariable.2ea4e00e.ttf);
+}
+/* Your existing CSS */
+.header-container {
+  box-sizing: border-box;
+  background-color: rgba(48, 77, 65, 0.36);;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  opacity: 0.7;
+  justify-content: center;
+  border-radius: 30px 30px 0px 0px;
+  color: black;
+  text-align: center;
+  width: 93.5vw;
+  height: 11.6vh;
+  position: fixed;
+  top: 9.3644%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.navbar-logo {
+  font-family: 'Offside';
+  color: #fff;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 100;
+  padding-left: 25px;
+}
+.navbar-links {
+  display: flex;
+}
+.navbar-icon:hover,
+.navbar-logo:hover {
+  color: silver;
+}
+.navbar-icon:hover img,
+.navbar-logo:hover img {
+  filter: brightness(100%);
+}
+.navbar-icon {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 100;
+  margin-right: 45px; /* Increase spacing between icons */
+  text-decoration: none;
+  color: #fff;
+  font-family: 'SudoVar';
+}
+.navbar-icon img {
+  width: 30px; /* Adjust icon size as needed */
+  margin-right: 3px; /* Adjust space between icon and text as needed */
+}
+/* Add this CSS to remove border from the login button */
+.login-button {
+  border: none; /* Remove border */
+  font-size: 21px;
+  margin-right: 35px;
+  font-family: 'SudoVar';
+  cursor: pointer;
+}
+
+/*!********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./src/app/components/LoginButton.css ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************/
+.login-button:hover{
+    color: silver;
+}
+/*!**************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./src/app/components/RoundedBackground.css ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************/
+
+
+.box {
+  box-sizing: border-box;
+  background-color: rgba(126, 126, 126, 0.7);
+  border-radius: 30px;
+  color: black;
+  width: 93.5%; /* Adjust width as needed */
+  height: 92.9%; /* Adjust height as needed */
+  opacity: 0.7;
+
+  /* Centering the box horizontally and vertically */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+body{
+  margin: 0;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: Arial, sans-serif;
+}
+
+

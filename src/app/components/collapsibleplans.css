@@ -1,0 +1,117 @@
+
+/*
+
+.collapsible .content {
+    padding: 6px;
+    background-color: #0AB28A;
+    position: fixed;
+    width: 14%;
+    bottom: 0;
+    max-height:1000px;
+}
+.collapsible .header {
+    background-color: #0AB28A;
+    padding: 6px;
+    cursor: pointer;
+    position: fixed;
+    width: 14%;
+    bottom: 0;
+}
+
+.collapsible{
+
+    overflow: hidden;
+
+}
+
+*/
+
+.accordion{
+    width: 150px;
+}
+
+.savedPlanButton{
+
+    width:250px;
+    height:43px;
+    background-color: #0AB28A;
+    border-radius: 5px 5px 0 0;
+    cursor: pointer;
+}
+
+.quickChatButton{
+    color: rgba(0, 0, 0, 0.524);
+    width:310px;
+    height:23px;
+    background: rgba(119, 142, 242, 0.51); /* Background color */
+    border-radius: 10px 10px 0 0;
+    cursor: pointer;
+    margin-bottom: 20px;
+    margin-left: 1035px;
+}
+
+.item {
+    transition: max-height 0.3s ease;
+    overflow: hidden;
+}
+
+.collapsed {
+    max-height: 40px; /* Adjust as needed */
+}
+
+.collapsedAccordion {
+    max-height: 0px; /* Adjust as needed */
+}
+
+.expanded {
+    max-height: 1000px; /* Adjust as needed */
+}
+
+.savedCardContainer {
+    overflow: hidden;
+}
+
+.savedCard {
+    transition: opacity 0.3s ease;
+}
+
+.savedCard.hidden {
+    opacity: 0;
+}
+
+.whiteStar {
+    width: 35px; /* Set the desired width */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: -25px;
+    vertical-align: center;
+    
+  }
+
+  .whiteChat{
+    margin-top: 14px;
+    width: 25px; /* Set the desired width */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: -15px;
+  }
+
+  .purpleSend{
+    width:35px;
+    height: 20px;
+    height: auto; /* Maintain aspect ratio */
+    margin-left: -30px;
+    margin-bottom: 20px;
+  }
+
+  .chatScreen{
+    background:#2E1F31;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    margin-bottom: 0;
+    overflow-y: auto;
+  }
+
+  .savedCardContainer {
+    display: flex;
+    flex-direction: column;
+  }

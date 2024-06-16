@@ -1,0 +1,96 @@
+@import url('https://fonts.cdnfonts.com/css/sudo-var');
+
+
+@font-face {
+  font-family: 'Offside';
+  src: url('fonts/Offside-Regular.ttf');
+}
+
+
+@font-face {
+  font-family: 'Maharlika';
+  src: url('fonts/Maharlika-Regular.ttf');
+}
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;  
+}
+
+.html, body {
+  background: 
+      linear-gradient(150deg, rgba(207, 157, 246, 0.8), rgba(255, 0, 0, 0) 70.71%),
+      linear-gradient(300deg, rgba(255, 255, 255, 0), rgba(0, 255, 0, 0) 70.71%),
+      linear-gradient(30deg, rgba(148, 171, 241, 1), rgba(0, 0, 255, 0) 70.71%);
+}
+
+/* .html, body {
+  background: linear-gradient(to bottom, #CF9DF6, #94ABF1);
+}
+  
+body::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 600px;
+  height: 800px;
+  background-color: rgba(255, 255, 255, 0.8);
+  transform: translate(50%, -50%);
+  border-radius: 50%;
+  filter: blur(100px);
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.content-box {
+  width: 300px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  text-align: center;
+}
+
+
+/*
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*/
+
+
+
+
+
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 701px) and (max-width: 1120px) {
+  .grid {
+    grid-template-columns: repeat(2, 50%);
+  }
+}
+
+

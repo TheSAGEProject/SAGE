@@ -1,0 +1,142 @@
+/* style.css */
+
+.taken-container{
+  margin-left: 10px;
+}
+
+.content {
+  flex: 1; /* Make the content div expand to fill the remaining space */
+  padding: 20px; /* Add padding to the content */
+  margin-top: 85px;
+  margin-left: 120px;
+  margin-right: 120px;
+  overflow-y: scroll;
+  max-width: 1700px;
+  background-color: rgba(144, 130, 130, 0.224);
+  border-radius: 30px;
+}
+
+.allClasses {
+  /* Adjust styles for the second div as needed */
+  margin: 10px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  margin-right: 20px;
+  background: rgba(213, 213, 213, 0.253); /* Background color */
+  border-radius: 30px; /* Adjust the border radius to control the roundness */
+  box-shadow: none;
+  min-width: 450px;
+  height:500px;
+  position: relative; /* Ensure elements are positioned relative to their container */
+  display: flex; /* Use flexbox layout */
+  flex-direction: column;
+  align-items: flex-start;
+  overflow-y:auto;
+}
+
+
+.flexContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  overflow-x: auto; 
+}
+
+.semester {
+margin: 20px;
+background: rgba(213, 213, 213, 0.253); 
+border-radius: 30px;
+position: relative;
+display: flex;
+justify-content: flex-start;
+overflow-y: auto; /* Enable vertical scrolling */
+padding: 160px; /* This padding can be adjusted as needed */
+padding-bottom: 250px; /* This padding can be adjusted as needed */
+min-width: 150px; /* Set a minimum width if necessary */
+width: 90%; /* Set the desired width */
+max-width: 10px; /* Adjust the maximum width as needed */
+align-items: center;
+}
+
+.specialHeader{
+margin:15px;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+color: #ffffff72;
+letter-spacing: -1px;
+font-weight:550;
+font-size: 2.4rem; 
+}
+
+.semesterHeader{
+color: #ffffff72;
+position: absolute;
+top: 12px; /* Adjust as needed */
+left: 25px; /* Adjust as needed */
+letter-spacing: -1px;
+font-weight:550;
+font-size: 2.1rem; 
+margin-top: 0;
+
+}
+
+/* Image styles */
+.whiteStar {
+width: 40px; /* Set the desired width */
+height: auto; /* Maintain aspect ratio */
+vertical-align: middle;
+
+}
+
+/* Text link styles */
+li {
+text-decoration: none;
+}
+
+.button-div {
+  display: flex;
+  margin-left: 13px;
+}
+
+.generate-button {
+  background-color: rgba(166, 103, 182, 0.755) !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 443px;
+  height: 60px;
+}
+
+.generate-button:hover {
+  transition: 0.05s;
+  background-color: rgba(122, 72, 136, 0.755) !important;
+}
+
+.loading-circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: white;
+  margin: 0 5px;
+  animation: loading 1.4s infinite ease-in-out both;
+}
+
+.loading-circle:nth-child(1) {
+  animation-delay: -0.32s;
+}
+
+.loading-circle:nth-child(2) {
+  animation-delay: -0.16s;
+}
+
+@keyframes loading {
+  0%,
+  80%,
+  100% {
+    transform: scale(0);
+  }
+  40% {
+    transform: scale(1);
+  }
+}

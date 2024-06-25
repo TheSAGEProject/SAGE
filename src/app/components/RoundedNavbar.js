@@ -28,7 +28,7 @@ const RoundedNavbar = () => {
             degree plan
           </Link>
           {isAuthenticated ? (
-            <Link href="/profile-page" className="navbar-icon">
+            <Link href="/profile" className="navbar-icon">
               <Image src={profImage} alt="Profile" width={24} height={24} />
             </Link>
           ) : (

@@ -35,8 +35,9 @@ Have you ever asked your advisor a question only to wait weeks for a response? M
 
 * AWS Team
   * Team Lead: Ram Gudur
-    * Vidur Nagania
+    * Vidur Nangia
     * Jason Luu
+    * Adrian Tran
     
 * Expansion Team
   * Team Lead: Maruthi Eranki
@@ -49,6 +50,7 @@ Have you ever asked your advisor a question only to wait weeks for a response? M
     * Sambi Singh
     * Jeevika Balaji
     * Sushant Ganji
+    * Abhishek Madhavan
     
 ## Coming 2024!
 

@@ -1,6 +1,4 @@
 {
   "/homepage/page": "app/homepage/page.js",
-  "/transcript/page": "app/transcript/page.js",
-  "/degreeplan/page": "app/degreeplan/page.js",
-  "/profile/page": "app/profile/page.js"
+  "/chatpage/page": "app/chatpage/page.js"
 }

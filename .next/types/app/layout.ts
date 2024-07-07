@@ -1,4 +1,4 @@
-// File: C:\Users\shrad\Projects\SAGE\SAGE\src\app\layout.tsx
+// File: C:\Users\ramis\Desktop\SAGE\src\app\layout.tsx
 import * as entry from '../../../src/app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

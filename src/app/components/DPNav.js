@@ -88,7 +88,7 @@ const Header = () => {
 
             <li>
               <Link
-                to="../profile-page"
+                to="../profile"
                 className="header-link generalFont"
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}

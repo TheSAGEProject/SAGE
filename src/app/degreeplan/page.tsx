@@ -26,9 +26,27 @@ const Button = styled.button`
 
 const DegreePlan = () => {
 
-  const [classes, setClasses] = useState([]);
-  const [semesters, setSemesters] = useState({});
+
+
+  //const [classes, setClasses] = useState([]);
+  //const [semesters, setSemesters] = useState({});
   const [loading, setLoading] = useState(false);
+
+  // Static sample data
+  const classes = [
+    { course_code: 'CS101', name: 'Intro to Computer Science', prerequisites: [], corequisites: [] },
+    { course_code: 'MATH101', name: 'Calculus I', prerequisites: [], corequisites: [] },
+    // Add more static class data here
+  ];
+
+  const semesters = {
+    'Fall 2023': [
+      { course_code: 'CS201', name: 'Data Structures', prerequisites: ['CS101'], corequisites: [] },
+      { course_code: 'MATH201', name: 'Calculus II', prerequisites: ['MATH101'], corequisites: [] },
+      // Add more static semester data here
+    ],
+    // Add more semesters here
+  };
 
   useEffect(() => {
     const fetchClasses = async () => {
@@ -58,11 +76,14 @@ const DegreePlan = () => {
   };
 
   const handleGenerateClick = () => {
+    /*
     getDegreePlan();
+    */
   };
 
   const handleRemoveFromPreviousSemester = (courseCode, destinationSemesterKey, movedClass) => {
-    const updatedSemesters = { ...semesters };
+    //const updatedSemesters = { ...semesters };
+    /*
     Object.entries(updatedSemesters).forEach(([semesterKey, semesterClasses]) => {
       if (Array.isArray(semesterClasses)) {
         if (semesterKey !== destinationSemesterKey) {
@@ -73,67 +94,68 @@ const DegreePlan = () => {
           // Add the moved class to the destination semester
           updatedSemesters[semesterKey] = [...semesterClasses, movedClass];
         }
+        
       }
     });
     setSemesters(updatedSemesters);
+    */
   };
 
   return (
     <div className="deg-container">
       <RoundedBack />
-       <Navbar />
-        <div className='content'>
-            <div className='flexContainer'>
-              <div className='allClasses'>
-                <p className='specialHeader generalFont taken-classes-text'>Taken Classes</p>
-                  <div className='taken-container'>
-                  {classes.map((classData) => (
-                    <Classes
-                      key={classData.course_code}
-                      course_code={classData.course_code}
-                      name={classData.name}
-                      prerequisites={classData.prerequisites}
-                      corequisites={classData.corequisites}
-                    />
-                  ))}
-                  </div>
-              </div>
-              <div className='flexContainer'>
-                {console.log(semesters)}
-                {Object.entries(semesters).map(([semesterName, semesterData]) => { //convert semester object into array of key-value pairs
-                  const [season, year] = semesterName.split(' ');
-                  return (
-                    <Semester
-                      key={semesterName}
-                      season={season}
-                      year={year}
-                      classes={semesterData}
-                      onRemoveFromPreviousSemester={handleRemoveFromPreviousSemester}
-                      semesterKey={season + ' ' + year}
-                      semesters={semesters}
-                    />
-                  );
-                })}
-              </div>
+      <Navbar />
+      <div className='content'>
+        <div className='flexContainer'>
+          <div className='allClasses'>
+            <p className='specialHeader generalFont taken-classes-text'>Taken Classes</p>
+            <div className='taken-container'>
+              {classes.map((classData) => (
+                <Classes
+                  key={classData.course_code}
+                  course_code={classData.course_code}
+                  name={classData.name}
+                  prerequisites={classData.prerequisites}
+                  corequisites={classData.corequisites}
+                />
+              ))}
             </div>
-            <div className='button-div'>
-              <Button className='generate-button' onClick={handleGenerateClick} disabled={loading}>
-                {loading ? (
-                  <>
-                    <div className="loading-circle"></div>
-                    <div className="loading-circle"></div>
-                    <div className="loading-circle"></div>
-                  </>
-                ) : (
-                  'Generate'
-                )}
-              </Button>
-            </div>
-            <div className='qc-div'>
-              <QuickChat/>
-            </div>
+          </div>
+          <div className='flexContainer'>
+            {Object.entries(semesters).map(([semesterName, semesterData]) => { //convert semester object into array of key-value pairs
+              const [season, year] = semesterName.split(' ');
+              return (
+                <Semester
+                  key={semesterName}
+                  season={season}
+                  year={year}
+                  classes={semesterData}
+                  onRemoveFromPreviousSemester={handleRemoveFromPreviousSemester}
+                  semesterKey={season + ' ' + year}
+                  semesters={semesters}
+                />
+              );
+            })}
+          </div>
+        </div>
+        <div className='button-div'>
+          <Button className='generate-button' onClick={handleGenerateClick} disabled={loading}>
+            {loading ? (
+              <>
+                <div className="loading-circle"></div>
+                <div className="loading-circle"></div>
+                <div className="loading-circle"></div>
+              </>
+            ) : (
+              'Generate'
+            )}
+          </Button>
+        </div>
+        <div className='qc-div'>
+          {/*<QuickChat />*/}
         </div>
       </div>
+    </div>
   );
 }
 

@@ -16,11 +16,11 @@
       "static/css/app/homepage/page.css",
       "static/chunks/app/homepage/page.js"
     ],
-    "/transcript/page": [
+    "/chatpage/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/transcript/page.css",
-      "static/chunks/app/transcript/page.js"
+      "static/css/app/chatpage/page.css",
+      "static/chunks/app/chatpage/page.js"
     ]
   }
 }

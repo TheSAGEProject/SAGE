@@ -4,6 +4,7 @@
 Have you ever asked your advisor a question only to wait weeks for a response? Many times, advisors get flooded with questions that have simple answers or problems that are easy to resolve. SAGE is an advisor chatbot that can answer your questions quickly and efficiently, so you don’t have to worry about it. On top of this, SAGE can view your profile to help you make decisions about future classes and even generate personalized degree plans. Take the stress out of the logistics and just ask SAGE for help with your inquiries and classes!
 </p>
 
+
 ## Tech Stack
 * React.js
 * Express.js
@@ -34,8 +35,9 @@ Have you ever asked your advisor a question only to wait weeks for a response? M
 
 * AWS Team
   * Team Lead: Ram Gudur
-    * Vidur Nagania
+    * Vidur Nangia
     * Jason Luu
+    * Adrian Tran
     
 * Expansion Team
   * Team Lead: Maruthi Eranki
@@ -48,6 +50,7 @@ Have you ever asked your advisor a question only to wait weeks for a response? M
     * Sambi Singh
     * Jeevika Balaji
     * Sushant Ganji
+    * Abhishek Madhavan
     
 ## Coming 2024!
 

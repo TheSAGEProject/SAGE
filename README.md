@@ -38,6 +38,7 @@ Have you ever asked your advisor a question only to wait weeks for a response? M
     * Vidur Nangia
     * Jason Luu
     * Adrian Tran
+    * Nicholas Remack 
     
 * Expansion Team
   * Team Lead: Maruthi Eranki
@@ -47,7 +48,6 @@ Have you ever asked your advisor a question only to wait weeks for a response? M
    
 * Design Team
   * Team Lead: Shraddha Subash
-    * Sambi Singh
     * Jeevika Balaji
     * Sushant Ganji
     * Abhishek Madhavan

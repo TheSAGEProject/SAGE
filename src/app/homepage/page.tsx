@@ -39,7 +39,7 @@ const Home = () => {
       <div className="search-container" ref={searchContainerRef}>
         <input type="text" placeholder="  get sage advice..." />
         
-        <Link href="/chat">
+        <Link href="/chatpage">
           <button type="submit"></button>
         </Link>
         

@@ -1,12 +1,12 @@
 "use client"; // This is a client component 
 
 import './Chat.css';
-import RoundedBack from '../components/RoundedBackground';
+import RoundedBack from './RoundedBackChat';
 import Navbar from '../components/RoundedNavbar';
 import React, { useState, useEffect, useRef } from 'react';
+import RoundedBackChat from './RoundedBackChat';
 
 const Chat = () => {
-
   const [messages, setMessages] = useState([
     { text: 'Hi Ethan! I’m SAGE, your personal AI advisor here at UTD. How may I assist you today?', isUser: false }
   ]);
@@ -77,7 +77,7 @@ const Chat = () => {
 
   return (
     <div className="chat-container">
-      <RoundedBack />
+      <RoundedBackChat />
       <Navbar />
       <div className="chat-output" ref={chatOutputRef}>
         {messages.map((message, index) => (

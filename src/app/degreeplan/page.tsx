@@ -20,8 +20,9 @@ const Button = styled.button`
   letter-spacing: 3px;
   width: 443px;
   height: 60px;
-  &:ho    background-color: #055c47;
-  }
+  &:hover {
+    background-color: #055c47;
+  }    
 `;
 
 const DegreePlan = () => {
@@ -152,7 +153,7 @@ const DegreePlan = () => {
           </Button>
         </div>
         <div className='qc-div'>
-          {/*<QuickChat />*/}
+          <QuickChat />
         </div>
       </div>
     </div>

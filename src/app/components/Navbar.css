@@ -1,6 +1,6 @@
 .header-container {
   box-sizing: border-box;
-  background-color: rgba(48, 77, 65, 0.36); /* 36% opacity */
+  background-color: rgba(46, 31, 49, 0.7); /* 70% opacity */
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   opacity: 0.7;
   justify-content: center;
@@ -50,7 +50,50 @@
   font-family: 'SudoVar';
   src: url('../fonts/SudoVariable.ttf');
 }
-/* Your existing CSS */
+/* new */
+.navbar-logo {
+  font-family: 'Offside';
+  color: #fff;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 100;
+  padding-left: 25px;
+}
+
+.navbar-icon {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 100;
+  margin-right: 45px; /* Increase spacing between icons */
+  text-decoration: none;
+  color: #fff;
+  font-family: 'SudoVar';
+}
+
+.navbar-icon img {
+  width: 30px;
+  margin-right: 3px;
+}
+
+.navbar-icon:hover {
+  color: #71AE6F;
+}
+
+/* change icon on hover */
+.navbar-icon:hover img.chat-icon {
+  content: url('../../../public/PchatG.png');
+}
+
+.navbar-icon:hover img.degp-icon {
+  content: url('../../../public/PdegG.png');
+}
+
+.navbar-icon:hover img.prof-icon {
+  content: url('../../../public/PdegG.png');
+}
+
+/* Your existing CSS 
 .header-container {
   box-sizing: border-box;
   background-color: rgba(48, 77, 65, 0.36);;
@@ -91,15 +134,16 @@
   align-items: center;
   font-size: 18px;
   font-weight: 100;
-  margin-right: 45px; /* Increase spacing between icons */
+  margin-right: 45px; /* Increase spacing between icons 
   text-decoration: none;
   color: #fff;
   font-family: 'SudoVar';
 }
 .navbar-icon img {
-  width: 30px; /* Adjust icon size as needed */
-  margin-right: 3px; /* Adjust space between icon and text as needed */
-}
+  width: 30px; /* Adjust icon size as needed 
+  margin-right: 3px; /* Adjust space between icon and text as needed 
+  */
+
 /* Add this CSS to remove border from the login button */
 .login-button {
   border: none; /* Remove border */

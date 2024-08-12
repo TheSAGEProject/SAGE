@@ -6,10 +6,14 @@ import chatImage from '../assets/Wchat.png';
 import degpImage from '../assets/Wdegp.png';
 import profImage from '../assets/Wprof.png';
 
-
 import PchatImage from '../assets/Pchat.png';
+import PchatGImage from '../assets/PchatG.png'; //green
+
 import PdegpImage from '../assets/Pdegp.png';
+import PdegGImage from '../assets/PdegG.png';//green
+
 import PprofImage from '../assets/Pprof.png';
+import PprofGImage from '../assets/PprofG.png';
 import FloralLogo from '../assets/FloralLogo.png';
 
 
@@ -17,17 +21,18 @@ import { Link } from 'react-router-dom';
 import { AlignCenter } from 'lucide-react';
 
 
+
 const Header = () => {
   const handleMouseEnter = (event) => {
     switch (event.target.alt) {
-      case 'chatWhite':
-        event.target.src = PchatImage;
+      case 'PchatImage':
+        event.target.src = PchatGImage;
         break;
       case 'degPWhite':
-        event.target.src = PdegpImage;
+        event.target.src = PdegGImage;
         break;
       case 'profileWhite':
-        event.target.src = PprofImage;
+        event.target.src = PprofGImage;
         break;
       case 'logo':
         event.target.src = FloralLogo;

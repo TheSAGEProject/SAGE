@@ -23,8 +23,9 @@ const RoundedNavbar = () => {
           <Image src={FloralLogo} alt="Logo" width={50} height={50} />
         </Link>
         <div className="navbar-links">
-          <Link href="/chatpage" className="navbar-icon">
-            <Image src={chatImage} alt="Chat" width={24} height={24} />
+          <Link href="/homepage" className="navbar-icon">
+            <Image src={chatImage} alt="Chat" width={40} height={40}
+            className= "chat-icon" />
             chat
           </Link>
           <Link href="/transcript" className="navbar-icon">

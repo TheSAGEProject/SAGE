@@ -3,6 +3,7 @@ import React from "react";
 import { useAuth0 } from "@auth0/auth0-react";
 import Navbar from '../components/RoundedNavbar';
 import RoundedBack from '../components/RoundedBackground';
+import LogoutButton from '../components/LogoutButton'
 
 const Profile = () => {
   const { user, isAuthenticated, isLoading } = useAuth0();
@@ -109,6 +110,7 @@ const Profile = () => {
           <button className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded w-full">
             Delete Account
           </button>
+          <LogoutButton/>
         </div>
       </main>
     )

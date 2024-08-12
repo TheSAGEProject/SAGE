@@ -1,12 +1,11 @@
-import React from 'react'
-import './RoundedBackground.css'
+import React from 'react';
+import './RoundedBackground.css';
 
-const RoundedBack = () => {
+const RoundedBack = () => { // Receive sidebarOpen prop
   return (
-    <div>
-      <div class="box"></div>
-    </div>
-  )
+    <div className="box"></div>
+    
+  );
 }
 
-export default RoundedBack
+export default RoundedBack;

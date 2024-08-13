@@ -77,8 +77,9 @@ const Chat = () => {
 
   return (
     <div className="chat-container">
-      <RoundedBackChat />
       <Navbar />
+      <RoundedBackChat />
+      
       <div className="chat-output" ref={chatOutputRef}>
         {messages.map((message, index) => (
           <div

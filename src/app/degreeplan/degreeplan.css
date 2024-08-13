@@ -12,7 +12,6 @@
   margin-right: 120px;
   overflow-y: scroll;
   max-width: 1700px;
-  background-color: rgba(130, 144, 134, 0.224);
   border-radius: 30px;
 }
 
@@ -22,7 +21,7 @@
   margin-top: 10px;
   margin-bottom: 30px;
   margin-right: 20px;
-  background: rgba(213, 213, 213, 0.253); /* Background color */
+  background: rgb(255, 254, 254); /* Background color */
   border-radius: 30px; /* Adjust the border radius to control the roundness */
   box-shadow: none;
   min-width: 450px;
@@ -44,7 +43,7 @@
 
 .semester {
 margin: 20px;
-background: rgba(213, 213, 213, 0.253); 
+background: rgb(249, 247, 247); 
 border-radius: 30px;
 position: relative;
 display: flex;
@@ -100,7 +99,10 @@ text-decoration: none;
 }
 
 .generate-button {
-  background-color: rgba(166, 103, 182, 0.755) !important;
+  background-color: 
+    linear-gradient(150deg, #ccedcb, rgba(255, 0, 0, 0) 70.71%),
+    linear-gradient(300deg, #62946B, rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(30deg, #2a694a, rgba(0, 0, 255, 0) 70.71%) !important;
   display: flex;
   justify-content: center;
   align-items: center;

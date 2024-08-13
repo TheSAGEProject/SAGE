@@ -2,12 +2,11 @@
 
 .box {
   box-sizing: border-box;
-  background-color: #3a4141;
+  background-color: #2E1F31;
   border-radius: 30px;
-  color: black;
   width: 93.5%; /* Adjust width as needed */
   height: 92.9%; /* Adjust height as needed */
-  opacity: 0.7;
+  opacity: 100;
 
   /* Centering the box horizontally and vertically */
   position: fixed;

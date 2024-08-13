@@ -26,8 +26,12 @@ const Profile = () => {
   return (
     user ? (
       <main className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
-        <RoundedBack />
+        
         <Navbar />
+        <RoundedBack>
+
+          
+        </RoundedBack>
         <div className="flex bg-white shadow-md rounded-lg overflow-hidden p-6 max-w-2xl w-full">
           <div className="flex flex-col items-center pr-6 border-r border-gray-200 w-1/3">
             <img

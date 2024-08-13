@@ -4,10 +4,8 @@
     box-sizing: border-box;
     background-color: rgba(126, 126, 126, 0.7);
     border-radius: 30px;
-    color: black;
     width: 93.5%; /* Adjust width as needed */
     height: 92.9%; /* Adjust height as needed */
-    opacity: 0.7;
   
     /* Centering the box horizontally and vertically */
     position: fixed;

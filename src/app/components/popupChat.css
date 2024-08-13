@@ -6,11 +6,17 @@
 }
 
 body {
-    background-color: rgba(166, 103, 182, 0.755);
+    background-color: 
+        linear-gradient(300deg, #62946B, rgba(0, 255, 0, 0) 70.71%),
+        linear-gradient(30deg, #2a694a, rgba(0, 0, 255, 0) 70.71%),
+        linear-gradient(150deg, #ccedcb, rgba(255, 0, 0, 0) 70.71%);
 }
 
 .open-btn, .open-btn-plan{
-    background: rgba(119, 142, 242, 0.51);
+    background: 
+        linear-gradient(150deg, #ccedcb, rgba(255, 0, 0, 0) 70.71%),
+        linear-gradient(300deg, #62946B, rgba(0, 255, 0, 0) 70.71%),
+        linear-gradient(30deg, #2a694a, rgba(0, 0, 255, 0) 70.71%);
     color: white;
     padding: 16px 20px;
     border-radius: 50px;

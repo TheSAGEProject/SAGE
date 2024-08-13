@@ -8,7 +8,6 @@
 /* Targeting specific elements */
 .dp-header,
 .dp-header * {
-  margin-top: 20px;
   padding: 0;
 }
 
@@ -24,7 +23,7 @@
   align-items: center;
   justify-content: space-between;
   background: #2e1f31;
-  padding: 30px;
+  padding: 10px;
 }
 
 /* Navbar list styles */
@@ -68,16 +67,7 @@
 
 
 
-/* Container for navbar */
-.dp-navbar {
-  border-radius: 0;
-  display: flex;
-  justify-content: space-between;
-  padding: 7px;
-  position: 'fixed';
-  left: '0';
 
-}
 
 /* Image styles */
 .profileWhite,

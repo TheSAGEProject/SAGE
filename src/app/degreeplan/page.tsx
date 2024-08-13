@@ -1,6 +1,6 @@
 "use client"; // This is a client component 
 import RoundedBack from '../components/RoundedBackground';
-import Navbar from '../components/RoundedNavbar';
+import Navbar from '../components/DPNav';
 import React, { useState, useEffect, useRef } from 'react';
 import './degreeplan.css';
 import styled from 'styled-components'
@@ -103,9 +103,9 @@ const DegreePlan = () => {
   };
 
   return (
-    <div className="deg-container">
-      <RoundedBack />
-      <Navbar />
+    <div>
+      
+      <Navbar/>
       <div className='content'>
         <div className='flexContainer'>
           <div className='allClasses'>

@@ -2,28 +2,31 @@ import '../global.css';
 import './dpnav.css';
 
 
-import chatImage from '../assets/Wchat.png';
-import degpImage from '../assets/Wdegp.png';
-import profImage from '../assets/Wprof.png';
+import chatImage from '../../../public/Wchat.png';
+import degpImage from '../../../public/Wdegp.png';
+import profImage from '../../../public/Wprof.png';
 
-import PchatImage from '../assets/Pchat.png';
-import PchatGImage from '../assets/PchatG.png'; //green
+import PchatImage from '../../../public/Pchat.png';
+import PchatGImage from '../../../public/PchatG.png'; //green
 
-import PdegpImage from '../assets/Pdegp.png';
-import PdegGImage from '../assets/PdegG.png';//green
+import PdegpImage from '../../../public/Pdegp.png';
+import PdegGImage from '../../../public/PdegG.png';//green
 
-import PprofImage from '../assets/Pprof.png';
-import PprofGImage from '../assets/PprofG.png';
-import FloralLogo from '../assets/FloralLogo.png';
+import PprofImage from '../../../public/Pprof.png';
+import PprofGImage from '../../../public/PprofG.png';
+import FloralLogo from '../../../public/FloralLogo.png';
 
-
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
+import Image from 'next/image';
 import { AlignCenter } from 'lucide-react';
 
 
 
 const Header = () => {
+
+
   const handleMouseEnter = (event) => {
+    /*
     switch (event.target.alt) {
       case 'PchatImage':
         event.target.src = PchatGImage;
@@ -40,11 +43,12 @@ const Header = () => {
         break;
     }
 
-
+    */
   };
 
 
   const handleMouseLeave = (event) => {
+    /*
     switch (event.target.alt) {
       case 'chatWhite':
         event.target.src = chatImage;
@@ -58,47 +62,48 @@ const Header = () => {
       default:
         break;
     }
+        */
   };
 
 
   return (
     <div className = "dp-header"> 
       <nav className="dp-navbar" >
-      <Link to="../" className="floral-logo">
-            <img src={FloralLogo} alt="Logo" />
+          <Link href="../" className="floral-logo">
+            <Image src={FloralLogo} alt="Logo" width={50} height={50} />
           </Link>
         <div>
           <ul id="dp-navbar">
             <li className="chat-link">
               <Link
-                to="../chat"
+                href="../chat"
                 className="generalFont chat-link"
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
               >
-                <img src={chatImage} alt="chatWhite" className="chatWhite" /> chat
+                <Image src={chatImage} alt="chatWhite" className="chatWhite" /> chat
               </Link>
             </li>
 
             <li className="chat-link">
               <Link
-                to="../degreeplan"
+                href="../degreeplan"
                 className="generalFont degreeplan-link"
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
               >
-                <img src={degpImage} alt="degPWhite" className="degPWhite" /> degree plan
+                <Image src={degpImage} alt="degPWhite" className="degPWhite" /> degree plan
               </Link>
             </li>
 
             <li>
               <Link
-                to="../profile"
+                href="../profile"
                 className="header-link generalFont"
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
               >
-                <img src={profImage} alt="profileWhite" className="profileWhite" /> 
+                <Image src={profImage} alt="profileWhite" className="profileWhite" /> 
               </Link>
             </li>
           </ul>

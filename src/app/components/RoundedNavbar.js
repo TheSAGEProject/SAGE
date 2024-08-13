@@ -2,7 +2,8 @@ import React from 'react';
 import './Navbar.css';
 import Link from 'next/link';
 import LoginButton from './LoginButton';
-import { useAuth0 } from "@auth0/auth0-react";
+import LogoutButton from './LogoutButton';
+import { useUser } from '@auth0/nextjs-auth0/client';
 import Image from 'next/image';
 import FloralLogo from '../../../public/FloralLogo.png';
 import chatImage from '../../../public/Wchat.png';
@@ -14,7 +15,9 @@ import degpGImage from '../../../public/PdegG.png';
 import profGImage from '../../../public/PprofG.png';
 
 const RoundedNavbar = () => {
-  const { isAuthenticated } = useAuth0();
+  const { user } = useUser(); // Correct hook import
+
+  console.log('User:', user);
 
   return (
     <div className="header-container">
@@ -33,12 +36,15 @@ const RoundedNavbar = () => {
             className= "degp-icon"/>
             degree plan
           </Link>
-          {isAuthenticated ? (
-            <Link href="/profile" className="navbar-icon">
-              <Image src={profImage} alt="Profile" width={40} height={40} />
-            </Link>
+          {user ? (
+            <>
+              <Link href="/profile" className="navbar-icon">
+                <Image src={profImage} alt="Profile" width={24} height={24} />
+              </Link>
+              <LogoutButton /> {/* Show logout button */}
+            </>
           ) : (
-            <LoginButton image={profImage} />
+            <LoginButton />
           )}
         </div>
       </nav>

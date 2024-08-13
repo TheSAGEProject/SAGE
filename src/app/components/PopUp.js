@@ -20,7 +20,7 @@ const PopUp = ({onClose}) => {
     <div style={{backdropFilter: 'blur(4px)', background: 'rgba(0, 0, 0, 0.3)', opacity: '30', position: 'fixed', inset: '0', width:'100%', height:'100%'}}>
         <div style={{marginTop: '10', display: 'flex', flexDirection: 'column', gap: '5', text: 'white'}}>
             <button onClick={onClose} style={{placeSelf: 'end'}}><X size={30}/></button>
-            <div style={{background: '#BF81EF', borderRadius: '15px', padding: '70px', alignItems: 'center', display: 'flex', flexDirection: 'column', gap: '5', margin:'200px'}}>
+            <div style={{background: '#33865f', borderRadius: '15px', padding: '70px', alignItems: 'center', display: 'flex', flexDirection: 'column', gap: '5', margin:'200px'}}>
             <form>
               <label style={{fontSize: '30px'}} className='generalFont'>
                 Plan Name:

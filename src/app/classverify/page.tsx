@@ -24,7 +24,6 @@ const Verify = () => {
     const userConfirmed = window.confirm("Are you sure you want to confirm this information?");
     if (userConfirmed) {
       setIsPopupVisible(true);
-      console.log ("pop up true")
     }
   };
 

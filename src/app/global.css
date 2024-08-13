@@ -25,9 +25,9 @@ html, body {
 
 html, body {
   background: 
-      linear-gradient(150deg, #71AE6F, rgba(255, 0, 0, 0) 70.71%),
+      linear-gradient(150deg, #ccedcb, rgba(255, 0, 0, 0) 70.71%),
       linear-gradient(300deg, #62946B, rgba(0, 255, 0, 0) 70.71%),
-      linear-gradient(30deg, #34875F, rgba(0, 0, 255, 0) 70.71%);
+      linear-gradient(30deg, #2a694a, rgba(0, 0, 255, 0) 70.71%);
 }
 
 /* .html, body {
@@ -46,19 +46,6 @@ body::after {
   border-radius: 50%;
   filter: blur(100px);
 } */
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

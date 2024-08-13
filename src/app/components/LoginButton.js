@@ -6,9 +6,12 @@ const LoginButton = () => {
   const { loginWithRedirect } = useAuth0();
 
   return (
+    /*
     <button onClick={() => loginWithRedirect()} className="login-button">
       Log In
     </button>
+    */
+    <a href="/api/auth/login">Login</a>
   );
 };
 

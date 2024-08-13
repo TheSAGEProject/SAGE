@@ -2,7 +2,7 @@
 
 .box {
   box-sizing: border-box;
-  background-color: rgba(126, 126, 126, 0.7);
+  background-color: #2E1F31;
   border-radius: 30px;
   color: black;
   width: 93.5%; /* Adjust width as needed */
@@ -25,4 +25,3 @@ body{
   background-attachment: fixed;
   font-family: Arial, sans-serif;
 }
-

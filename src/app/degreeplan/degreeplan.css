@@ -15,23 +15,7 @@
   border-radius: 30px;
 }
 
-.allClasses {
-  /* Adjust styles for the second div as needed */
-  margin: 10px;
-  margin-top: 10px;
-  margin-bottom: 30px;
-  margin-right: 20px;
-  background: rgb(255, 254, 254); /* Background color */
-  border-radius: 30px; /* Adjust the border radius to control the roundness */
-  box-shadow: none;
-  min-width: 450px;
-  height:500px;
-  position: relative; /* Ensure elements are positioned relative to their container */
-  display: flex; /* Use flexbox layout */
-  flex-direction: column;
-  align-items: flex-start;
-  overflow-y:auto;
-}
+
 
 
 .flexContainer {
@@ -48,37 +32,18 @@ border-radius: 30px;
 position: relative;
 display: flex;
 justify-content: flex-start;
-overflow-y: auto; /* Enable vertical scrolling */
+overflow-y: scroll; /* Enable vertical scrolling */
+overflow-x: hidden;
 padding: 160px; /* This padding can be adjusted as needed */
 padding-bottom: 250px; /* This padding can be adjusted as needed */
 min-width: 150px; /* Set a minimum width if necessary */
 width: 90%; /* Set the desired width */
-max-width: 10px; /* Adjust the maximum width as needed */
 align-items: center;
+scrollbar-width: thin;
 }
 
-.specialHeader{
-margin:15px;
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-color: #ffffff72;
-letter-spacing: -1px;
-font-weight:550;
-font-size: 2.4rem; 
-}
 
-.semesterHeader{
-color: #ffffff72;
-position: absolute;
-top: 12px; /* Adjust as needed */
-left: 25px; /* Adjust as needed */
-letter-spacing: -1px;
-font-weight:550;
-font-size: 2.1rem; 
-margin-top: 0;
 
-}
 
 /* Image styles */
 .whiteStar {

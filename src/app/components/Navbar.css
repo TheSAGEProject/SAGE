@@ -34,7 +34,6 @@
 .navbar {
   display: flex;
   justify-content: space-between;
-  font-family: 'SudoVar';
   align-items: center;
   position: relative;
   top: 25%;
@@ -46,10 +45,6 @@
 @font-face {
   font-family: 'Offside';
   src: url('../fonts/Offside-Regular.ttf');
-}
-@font-face{
-  font-family: 'SudoVar';
-  src: url('../fonts/SudoVariable.ttf');
 }
 /* new */
 .navbar-logo {
@@ -69,7 +64,6 @@
   margin-right: 45px; /* Increase spacing between icons */
   text-decoration: none;
   color: #fff;
-  font-family: 'SudoVar';
 }
 
 .navbar-icon img {
@@ -94,59 +88,10 @@
   content: url('../../../public/PdegG.png');
 }
 
-/* Your existing CSS 
-.header-container {
-  box-sizing: border-box;
-  background-color: #2E1F31;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  opacity: 0.7;
-  justify-content: center;
-  border-radius: 30px 30px 0px 0px;
-  color: black;
-  text-align: center;
-  width: 93.5vw;
-  height: 11.6vh;
-  position: fixed;
-  top: 9.3644%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.navbar-logo {
-  font-family: 'Offside';
-  color: #fff;
-  text-decoration: none;
-  font-size: 25px;
-  font-weight: 100;
-  padding-left: 25px;
-}
-.navbar-links {
-  display: flex;
-}
-.navbar-icon:hover img,
-.navbar-logo:hover img {
-  filter: brightness(100%);
-  color: silver;
-}
-.navbar-icon {
-  display: flex;
-  align-items: center;
-  font-size: 18px;
-  font-weight: 100;
-  margin-right: 45px; /* Increase spacing between icons 
-  text-decoration: none;
-  color: #fff;
-  font-family: 'SudoVar';
-}
-.navbar-icon img {
-  width: 30px; /* Adjust icon size as needed 
-  margin-right: 3px; /* Adjust space between icon and text as needed 
-  */
 
-/* Add this CSS to remove border from the login button */
 .login-button {
   border: none; /* Remove border */
   font-size: 21px;
   margin-right: 35px;
-  font-family: 'SudoVar';
   cursor: pointer;
 }

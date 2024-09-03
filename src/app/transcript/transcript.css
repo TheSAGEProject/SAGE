@@ -5,10 +5,6 @@
     src: url('../fonts/Offside-Regular.ttf');
 }
 
-@font-face {
-    font-family: 'SudoVar';
-    src: url('../fonts/SudoVariable.ttf');
-}
 
 body {
     display: flex;
@@ -24,7 +20,7 @@ h3 {
     margin-bottom: 10px;
     font-weight: 200;
     position: relative;
-    margin-top: 70px;
+    margin-top: 300px;
     font-family: 'Maharlika';
     z-index: 1;
 }

@@ -29,30 +29,31 @@ const Verify = () => {
 
   return (
     <div className='upload'>
-      <RoundedBack />
       <Navbar />
-      <div className="header">
-        <h1>Is this information correct?</h1>
-      </div>
-      <div className="verify-container">
-        <div className="content">
-          {courses.map((semester, termIndex) => (
-            <div key={termIndex} className="semester">
-              <h2>{semester.term}</h2>
-              {semester.courses.map((course, courseIndex) => (
-                <div key={courseIndex} className="course">
-                  <input
-                    type="text"
-                    value={course}
-                    onChange={(e) => handleInputChange(termIndex, courseIndex, e)}
-                  />
-                  <button className="grade-button">A</button>
-                </div>
-              ))}
-            </div>
-          ))}
+      <div className='bg-dark-purple opacity-50 w-5/6 fixed left-1/2 top-24 transform -translate-x-1/2 rounded-3xl h-[70vh] md:h-[80vh] lg:h-[90vh] p-6'>
+        <div className="header">
+          <h1>Is this information correct?</h1>
         </div>
-        <button className="confirm-button" onClick={handleConfirmClick}>Confirm</button>
+        <div className="verify-container" >
+          <div className="content">
+            {courses.map((semester, termIndex) => (
+              <div key={termIndex} className="semester">
+                <h2>{semester.term}</h2>
+                {semester.courses.map((course, courseIndex) => (
+                  <div key={courseIndex} className="course">
+                    <input
+                      type="text"
+                      value={course}
+                      onChange={(e) => handleInputChange(termIndex, courseIndex, e)}
+                    />
+                    <button className="grade-button">A</button>
+                  </div>
+                ))}
+              </div>
+            ))}
+          </div>
+          <button className="confirm-button" onClick={handleConfirmClick}>Confirm</button>
+        </div>
       </div>
       {isPopupVisible && <PopUp onClose={() => setIsPopupVisible(false)} />}
     </div>

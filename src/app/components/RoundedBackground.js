@@ -1,9 +1,12 @@
 import React from 'react';
-import './RoundedBackground.css';
 
 const RoundedBack = () => { // Receive sidebarOpen prop
   return (
-    <div className="box"></div>
+    <div className="bg-dark-purple opacity-50 w-5/6 fixed left-48 top-24  rounded-3xl" style={{"height": "900px"}}>
+
+
+      
+    </div>
     
   );
 }

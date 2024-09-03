@@ -1,5 +1,4 @@
-import '../global.css';
-import './dpnav.css';
+
 
 
 import chatImage from '../../../public/Wchat.png';
@@ -18,92 +17,45 @@ import FloralLogo from '../../../public/FloralLogo.png';
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { AlignCenter } from 'lucide-react';
 
 
 
-const Header = () => {
-
-
-  const handleMouseEnter = (event) => {
-    /*
-    switch (event.target.alt) {
-      case 'PchatImage':
-        event.target.src = PchatGImage;
-        break;
-      case 'degPWhite':
-        event.target.src = PdegGImage;
-        break;
-      case 'profileWhite':
-        event.target.src = PprofGImage;
-        break;
-      case 'logo':
-        event.target.src = FloralLogo;
-      default:
-        break;
-    }
-
-    */
-  };
-
-
-  const handleMouseLeave = (event) => {
-    /*
-    switch (event.target.alt) {
-      case 'chatWhite':
-        event.target.src = chatImage;
-        break;
-      case 'degPWhite':
-        event.target.src = degpImage;
-        break;
-      case 'profileWhite':
-        event.target.src = profImage;
-        break;
-      default:
-        break;
-    }
-        */
-  };
-
+const DPNav = () => {
 
   return (
-    <div className = "dp-header"> 
-      <nav className="dp-navbar" >
-          <Link href="../" className="floral-logo">
-            <Image src={FloralLogo} alt="Logo" width={50} height={50} />
+    <div> 
+      <nav className='flex align-middle justify-between bg-dark-purple' >
+          <Link href="../">
+            <Image src={FloralLogo} alt="Logo" width={50} height={50} className='absolute top-5 left-8'/>
           </Link>
         <div>
-          <ul id="dp-navbar">
-            <li className="chat-link">
+          <ul className='flex items-center justify-center '>
+            <li className="text-2xl ">
               <Link
                 href="../chat"
-                className="generalFont chat-link"
-                onMouseEnter={handleMouseEnter}
-                onMouseLeave={handleMouseLeave}
+                className="mr-8 ml-3 flex items-center text-white hover:text-hover-green ..."
               >
-                <Image src={chatImage} alt="chatWhite" className="chatWhite" /> chat
+                <Image src={chatImage} alt="chatWhite" className='scale-50 ' />
+                <p className='font-raleway tracking-wider font-extralight antialiased'>chat.</p>
+                
               </Link>
             </li>
 
-            <li className="chat-link">
+            <li className="text-2xl">
               <Link
                 href="../degreeplan"
-                className="generalFont degreeplan-link"
-                onMouseEnter={handleMouseEnter}
-                onMouseLeave={handleMouseLeave}
+                className=" mr-8 ml-3 flex items-center text-white hover:text-hover-green ..."
               >
-                <Image src={degpImage} alt="degPWhite" className="degPWhite" /> degree plan
+                <Image src={degpImage} alt="degPWhite" className="scale-50 " />
+                <p className='font-raleway tracking-wider'>degree plan.</p>
               </Link>
             </li>
 
             <li>
-              <Link
+            <Link
                 href="../profile"
-                className="header-link generalFont"
-                onMouseEnter={handleMouseEnter}
-                onMouseLeave={handleMouseLeave}
               >
-                <Image src={profImage} alt="profileWhite" className="profileWhite" /> 
+                <Image src={profImage} alt="profileWhite" className='w-12 h-12 mr-8' /> 
               </Link>
             </li>
           </ul>
@@ -114,4 +66,4 @@ const Header = () => {
 };
 
 
-export default Header;
+export default DPNav;

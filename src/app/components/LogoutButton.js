@@ -10,7 +10,7 @@ const LogoutButton = () => {
       Log Out
     </button>
     */
-    <a href="/api/auth/logout">Logout</a>
+    <a href="/api/auth/logout" className="text-white text-3xl font-raleway">Logout</a>
   );
 };
 

@@ -4,12 +4,13 @@ import './Chat.css';
 import RoundedBack from '../components/RoundedBackground';
 import Navbar from '../components/RoundedNavbar';
 import React, { useState, useEffect, useRef } from 'react';
-import { useRouter } from 'next/router';
+import RoundedBackChat from '../components/RoundedBackChat';
 
 const Chat = () => {
   const [messages, setMessages] = useState([
     { text: 'Hi Ethan! I’m SAGE, your personal AI advisor here at UTD. How may I assist you today?', isUser: false }
   ]);
+
   const [inputText, setInputText] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const chatOutputRef = useRef(null);
@@ -74,43 +75,43 @@ const Chat = () => {
     }
   }, [messages]);
 
-
   return (
-    <div className="chat-container">
-      <RoundedBack />
+    <div className="chat-container ">
       <Navbar />
-      <div className="chat-output" ref={chatOutputRef}>
-        {messages.map((message, index) => (
-          <div
-            key={index}
-            className={`message ${message.isUser ? 'user-message' : 'bot-message'}`}
-          >
-            {message.formatted ? (
-              <div dangerouslySetInnerHTML={{ __html: message.text }} />
-            ) : (
-              message.text
-            )}
-          </div>
-        ))}
-        {isLoading && (
-          <div className="loading-box">
-            <div className="loading-circle"></div>
-            <div className="loading-circle"></div>
-            <div className="loading-circle"></div>
-          </div>
-        )}
-      </div>
-      <form onSubmit={handleSubmit} className="text-field">
-        <input
-          type="text"
-          placeholder=" get sage advice..."
-          value={inputText}
-          onChange={handleInputChange}
-        />
-        <div className="submit-container">
-          <button type="submit"></button>
+      <div className='bg-dark-purple opacity-50 w-5/6 fixed left-1/2 top-24 transform -translate-x-1/2 rounded-3xl h-[70vh] md:h-[80vh] lg:h-[90vh] p-6'>
+        <div className="chat-output" ref={chatOutputRef}>
+          {messages.map((message, index) => (
+            <div
+              key={index}
+              className={`message ${message.isUser ? 'user-message' : 'bot-message'}`}
+            >
+              {message.formatted ? (
+                <div dangerouslySetInnerHTML={{ __html: message.text }} />
+              ) : (
+                message.text
+              )}
+            </div>
+          ))}
+          {isLoading && (
+            <div className="loading-box">
+              <div className="loading-circle"></div>
+              <div className="loading-circle"></div>
+              <div className="loading-circle"></div>
+            </div>
+          )}
         </div>
-      </form>
+        <form onSubmit={handleSubmit} className="text-field">
+          <input
+            type="text"
+            placeholder=" get sage advice..."
+            value={inputText}
+            onChange={handleInputChange}
+          />
+          <div className="submit-container">
+            <button type="submit"></button>
+          </div>
+        </form>
+      </div>
     </div>
   );
 }

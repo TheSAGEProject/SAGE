@@ -1,6 +1,6 @@
 "use client"; // This is a client component 
 import RoundedBack from '../components/RoundedBackground';
-import Navbar from '../components/RoundedNavbar';
+import Navbar from '../components/DPNav';
 import React, { useState, useEffect, useRef } from 'react';
 import './degreeplan.css';
 import styled from 'styled-components'
@@ -8,21 +8,7 @@ import Classes from '../components/Classes';
 import Semester from '../components/Semester';
 import QuickChat from '../components/QuickChat'
 
-const Button = styled.button`
-  background-color: #0AB28A;
-  color: white;  padding: 13px 150px;
-  border-radius: 20px;
-  outline: none;
-  cursor: pointer;
-  transition: ease background-color 250ms;
-  font-family: 'Sudo Var', sans-serif;
-  font-size: 35px;
-  letter-spacing: 3px;
-  width: 443px;
-  height: 60px;
-  &:ho    background-color: #055c47;
-  }
-`;
+
 
 const DegreePlan = () => {
 
@@ -102,59 +88,61 @@ const DegreePlan = () => {
   };
 
   return (
-    <div className="deg-container">
-      <RoundedBack />
-      <Navbar />
-      <div className='content'>
-        <div className='flexContainer'>
-          <div className='allClasses'>
-            <p className='specialHeader generalFont taken-classes-text'>Taken Classes</p>
-            <div className='taken-container'>
-              {classes.map((classData) => (
-                <Classes
-                  key={classData.course_code}
-                  course_code={classData.course_code}
-                  name={classData.name}
-                  prerequisites={classData.prerequisites}
-                  corequisites={classData.corequisites}
-                />
-              ))}
+    <div className=''>
+      
+      <Navbar/>
+      <div className='bg-dark-purple opacity-75 h-screen' >
+            <div className='flexContainer bg-[#19061d]  overflow-x-scroll absolute top-48 left-20 w-[2450px] rounded-3xl'>
+              <div className='m-[10px] mb-[30px] mr-[20px] ml-[100px] bg-[#fffefe] rounded-[30px] shadow-none min-w-[450px] h-[500px] relative flex flex-col items-start mt-24 overflow-y-scroll '>
+                <p className='m-[15px] flex flex-col items-start tracking-[-1px] font-semibold text-[2.4rem]  taken-classes-text font-raleway text-dark-green ' style={{"fontWeight": 700}}>Taken Classes</p>
+                <div className=''>
+                  {classes.map((classData) => (
+                    <Classes
+                      key={classData.course_code}
+                      course_code={classData.course_code}
+                      name={classData.name}
+                      prerequisites={classData.prerequisites}
+                      corequisites={classData.corequisites}
+                    />
+                  ))}
+                </div>
+              </div>
+              <div className='flexContainer'>
+                {Object.entries(semesters).map(([semesterName, semesterData]) => { //convert semester object into array of key-value pairs
+                  const [season, year] = semesterName.split(' ');
+                  return (
+                    <Semester
+                      key={semesterName}
+                      season={season}
+                      year={year}
+                      classes={semesterData}
+                      onRemoveFromPreviousSemester={handleRemoveFromPreviousSemester}
+                      semesterKey={season + ' ' + year}
+                      semesters={semesters}
+                    />
+                  );
+                })}
+              </div>
+            </div>
+            <div className='button-div'>
+              <button className='generate-button font-raleway bg-light-green text-white py-[13px] px-[150px] rounded-[20px] outline-none cursor-pointer transition ease duration-250 text-[35px] tracking-[3px] w-[443px] h-[60px] hover:bg-[#055c47] absolute top-3/4 left-48' 
+              onClick={handleGenerateClick} disabled={loading}>
+                {loading ? (
+                  <>
+                    <div className="loading-circle"></div>
+                    <div className="loading-circle"></div>
+                    <div className="loading-circle"></div>
+                  </>
+                ) : (
+                  'regenerate'
+                )}
+              </button>
+            </div>
+            <div className='qc-div'>
+              <QuickChat />
             </div>
           </div>
-          <div className='flexContainer'>
-            {Object.entries(semesters).map(([semesterName, semesterData]) => { //convert semester object into array of key-value pairs
-              const [season, year] = semesterName.split(' ');
-              return (
-                <Semester
-                  key={semesterName}
-                  season={season}
-                  year={year}
-                  classes={semesterData}
-                  onRemoveFromPreviousSemester={handleRemoveFromPreviousSemester}
-                  semesterKey={season + ' ' + year}
-                  semesters={semesters}
-                />
-              );
-            })}
-          </div>
-        </div>
-        <div className='button-div'>
-          <Button className='generate-button' onClick={handleGenerateClick} disabled={loading}>
-            {loading ? (
-              <>
-                <div className="loading-circle"></div>
-                <div className="loading-circle"></div>
-                <div className="loading-circle"></div>
-              </>
-            ) : (
-              'Generate'
-            )}
-          </Button>
-        </div>
-        <div className='qc-div'>
-          {/*<QuickChat />*/}
-        </div>
-      </div>
+        
     </div>
   );
 }

@@ -1,0 +1,196 @@
+@font-face {
+    font-family: 'Maharlika';
+    src: url('../fonts/Maharlika-Regular.ttf');
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: linear-gradient(to bottom right, #71ad6f, #33865f);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.upload {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.verify-container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 10px;
+    padding: 20px;
+    background-color: #38343a; /* Dark grey background for the container */
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 1.5em;
+    color: #ffffff;
+    font-family: 'Maharlika';
+}
+
+.content {
+    width: 100%;
+    max-height: 400px; /* Adjust based on your design */
+    overflow-y: scroll; /* Always show scrollbar */
+    margin-bottom: 20px;
+    padding-right: 16px; /* Space for the scrollbar */
+    box-sizing: content-box; /* Ensure padding is considered in width */
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: #aaa #38343a; /* For Firefox */
+}
+
+/* For WebKit browsers (Chrome, Safari) */
+.content::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+}
+
+.content::-webkit-scrollbar-track {
+    background: #38343a; /* Background of the scrollbar track */
+}
+
+.content::-webkit-scrollbar-thumb {
+    background: #aaa; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Rounded corners for the scrollbar thumb */
+}
+
+.content::-webkit-scrollbar-thumb:hover {
+    background: #888; /* Darker color when hovering over the scrollbar thumb */
+}
+
+.semester h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    font-family: 'Maharlika';
+    color: white;
+    text-align: left;
+}
+
+.course {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.course input {
+    flex-grow: 1;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px; /* Adjusted for consistency */
+    background-color: #fff;
+    color: #38343a;
+    width: calc(100% - 70px);
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+}
+
+.grade-button {
+    padding: 10px 15px;
+    background-color: #d6d6d6;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Maharlika';
+    font-size: 30px;
+    color: #333;
+}
+
+.grade-button:hover {
+    background-color: #c0c0c0;
+}
+
+.confirm-button {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #6fb36f;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1.2em;
+    cursor: pointer;
+    font-family: 'Maharlika';
+    font-size: 30px;
+    text-align: center;
+}
+
+.confirm-button:hover {
+    background-color: rgba(48, 77, 65, 0.6);
+}
+
+.button-container {
+    position: absolute;
+    bottom: 200px;
+}
+
+.loading-text {
+    font-size: 25px; /* Adjust the font size as needed */
+}
+
+.custom-button {
+    color: white;
+    width: 100%; /* Adjusted to fit the container */
+    height: 58%;
+    cursor: pointer;
+    background: linear-gradient(132.91deg, #71AE6F 11.34%, #62946B 49.52%, #34875F 87.71%);
+    border-radius: 13px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 41px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    font-family: 'Maharlika';
+}
+
+.custom-button:hover {
+    background-color: rgba(48, 77, 65, 0.6);
+    border-color: none;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 600px) {
+    .content {
+        max-height: 300px; /* Adjust for smaller screens */
+    }
+
+    .header h1 {
+        font-size: 1.2em;
+    }
+
+    .semester h2 {
+        font-size: 1em;
+    }
+
+    .course input {
+        padding: 8px;
+    }
+
+    .grade-button {
+        font-size: 24px;
+        padding: 8px 12px;
+    }
+
+    .confirm-button {
+        font-size: 1em;
+        padding: 8px 0;
+    }
+}

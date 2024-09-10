@@ -5,10 +5,6 @@
     src: url('../fonts/Offside-Regular.ttf');
 }
 
-@font-face {
-    font-family: 'SudoVar';
-    src: url('../fonts/SudoVariable.ttf');
-}
 
 body {
     display: flex;
@@ -19,13 +15,13 @@ body {
 
 h3 {
     color: white;
-    font-size: 50px;
+    font-size: 70px;
     text-align: center;
     margin-bottom: 10px;
     font-weight: 200;
     position: relative;
-    margin-top: 70px;
-    font-family: 'Offside';
+    margin-top: 300px;
+    font-family: 'Maharlika';
     z-index: 1;
 }
 
@@ -36,12 +32,12 @@ h2 {
     position: relative;
     font-weight: 100;
     margin-top: 35px;
+    font-family: 'Raleway';
     transform: translateY(-40%);
 }
 
 .transcriptimage {
     margin-top: 100px;
-    width: min(20vw, 225px);
     display: block;
     margin: 0px auto;
     position: relative;
@@ -93,6 +89,7 @@ button {
     border: none;
     cursor: pointer;
     font-size: inherit;
+    font-family: 'Raleway';
     z-index: 2;
 }
 
@@ -108,7 +105,7 @@ button {
 
 .custom-button,
 .upload-button {
-    background-color: rgba(48, 77, 65, 0.36);
+    background-color: #2E1F31;
     margin-top: 30px;
 }
 

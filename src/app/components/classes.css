@@ -18,10 +18,12 @@ justify-content: center; /* Aligmn items at the start of the flex container */
 
 
 .classes{
-  color: rgba(0, 0, 0, 0.524);
   /* Adjust styles for the second div as needed */
   margin-left: 15px ;
-  background: rgba(119, 142, 242, 0.274); /* Background color */
+  background: 
+      linear-gradient(150deg, #acc9ab, rgba(255, 0, 0, 0) 70.71%),
+      linear-gradient(300deg, #62946B, rgba(0, 255, 0, 0) 70.71%),
+      linear-gradient(30deg, #2a694a, rgba(0, 0, 255, 0) 70.71%);
   border-radius: 20px; /* Adjust the border radius to control the roundness */
   width:400px;
   min-height: 100px;
@@ -111,26 +113,7 @@ justify-content: center; /* Aligmn items at the start of the flex container */
     opacity: 1.3; /* Example opacity for dropped items when item is being dragged over */
 }
 
-.specialHeader{
-  margin:15px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  color: #ffffff72;
-  letter-spacing: -1px;
-  font-weight:550;
-  font-size: 2.4rem; 
-  }
+
   
-  .semesterHeader{
-  color: #ffffff72;
-  position: absolute;
-  top: 12px; /* Adjust as needed */
-  left: 25px; /* Adjust as needed */
-  letter-spacing: -1px;
-  font-weight:550;
-  font-size: 2.1rem; 
-  margin-top: 0;
-  
-  }
+ 
   

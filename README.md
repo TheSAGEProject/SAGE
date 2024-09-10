@@ -5,6 +5,7 @@ Have you ever asked your advisor a question only to wait weeks for a response? M
 </p>
 
 
+
 ## Tech Stack
 * React.js
 * Express.js
@@ -36,9 +37,11 @@ Have you ever asked your advisor a question only to wait weeks for a response? M
 * AWS Team
   * Team Lead: Ram Gudur
     * Vidur Nangia
+    * Vidur Nangia
     * Jason Luu
     * Adrian Tran
     * Nicholas Remack 
+    * Adrian Tran
     
 * Expansion Team
   * Team Lead: Maruthi Eranki
@@ -50,6 +53,7 @@ Have you ever asked your advisor a question only to wait weeks for a response? M
   * Team Lead: Shraddha Subash
     * Jeevika Balaji
     * Sushant Ganji
+    * Abhishek Madhavan
     * Abhishek Madhavan
     
 ## Coming 2024!

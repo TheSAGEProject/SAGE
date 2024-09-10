@@ -1,34 +1,31 @@
 "use client"; // This is a client component 
 import React, { useEffect, useRef } from 'react';
-import './Home.css';
 import Link from 'next/link';
 import Navbar from '../components/RoundedNavbar';
-import RoundedBack from '../components/RoundedBackground';
-
 
 const Home = () => {
-  const searchContainerRef = useRef(null);
-
+  const searchContainerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const adjustSearchContainerPosition = () => {
-      const h1Height = document.querySelector('h1').getBoundingClientRect().height;
-      const h1Top = document.querySelector('h1').getBoundingClientRect().top;
-      searchContainerRef.current.style.top = (h1Top + h1Height + window.scrollY + window.innerHeight * 0.05) + 'px';
+      const h1Element = document.querySelector('h1');
+      
+      if (h1Element) {
+        const h1Height = h1Element.getBoundingClientRect().height;
+        const h1Top = h1Element.getBoundingClientRect().top;
+        if (searchContainerRef.current) {
+          searchContainerRef.current.style.top = `${h1Top + h1Height + window.scrollY + window.innerHeight * 0.05}px`;
+        }
+      }
     };
 
-
     adjustSearchContainerPosition();
-
-
     window.addEventListener('resize', adjustSearchContainerPosition);
-
 
     return () => {
       window.removeEventListener('resize', adjustSearchContainerPosition);
     };
   }, []);
-
 
   return (
     <div>
@@ -47,6 +44,5 @@ const Home = () => {
     </div>
   );
 };
-
 
 export default Home;

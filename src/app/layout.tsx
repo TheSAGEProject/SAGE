@@ -1,4 +1,6 @@
 import Providers from './providers'
+import './global.css'
+import { UserProvider } from '@auth0/nextjs-auth0/client';
 
 export const metadata = {
   title: 'Next.js',
@@ -13,9 +15,13 @@ export default function RootLayout({
   return (
     
     <html lang="en">
-      <body>
-        <Providers>{children}</Providers>
-      </body>
+      <UserProvider>
+        <body>
+          
+          <Providers>{children}</Providers>  
+          
+        </body>
+      </UserProvider>
     </html>
   )
 }

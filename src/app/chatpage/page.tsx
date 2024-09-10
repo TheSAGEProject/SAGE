@@ -4,13 +4,12 @@ import './Chat.css';
 import RoundedBack from '../components/RoundedBackground';
 import Navbar from '../components/RoundedNavbar';
 import React, { useState, useEffect, useRef } from 'react';
-import RoundedBackChat from '../components/RoundedBackChat';
+import { useRouter } from 'next/router';
 
 const Chat = () => {
   const [messages, setMessages] = useState([
     { text: 'Hi Ethan! I’m SAGE, your personal AI advisor here at UTD. How may I assist you today?', isUser: false }
   ]);
-
   const [inputText, setInputText] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const chatOutputRef = useRef(null);
@@ -74,6 +73,7 @@ const Chat = () => {
       chatOutputRef.current.scrollTop = chatOutputRef.current.scrollHeight;
     }
   }, [messages]);
+
 
   return (
     <div className="chat-container ">

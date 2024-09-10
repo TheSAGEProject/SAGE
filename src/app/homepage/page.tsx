@@ -28,31 +28,18 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="relative overflow-y-scroll h-screen">
-      <Navbar />
-      <div className="bg-dark-purple opacity-50 w-5/6 fixed left-1/2 top-24 transform -translate-x-1/2 rounded-3xl h-[70vh] md:h-[80vh] lg:h-[90vh] p-6">
-        <div className="flex flex-col items-center relative h-full justify-center">
-          <h1 className="text-white text-9xl md:text-8xl lg:text-9xl font-maharlika">
-            SAGE
-          </h1>
-          <h2 className="text-white font-raleway text-2xl font-light mt-2">
-            Student Advising and Guidance Engine
-          </h2>
-          <div className="w-full flex flex-col items-center mt-8" ref={searchContainerRef}>
-            <div className="relative w-3/4 lg:w-1/2">
-              <input
-                type="text"
-                placeholder="  get sage advice..."
-                className="font-sudo w-full py-4 px-4 rounded-full border border-gray-300 text-xl pr-16 shadow-[inset_0_-2px_4px_rgba(0,0,0,0.6)]"
-              />
-              <Link href="/chatpage">
-                <button type="submit" className="absolute right-0 top-0 mt-2 mr-2 bg-blue-500 text-dark-purple py-2 px-4 rounded-full">
-                  <img src='Psend.png' className='w-10 h-10'/>
-                </button>
-              </Link>
-            </div>
-          </div>
-        </div>
+    <div>
+      <RoundedBack />
+        <Navbar />
+      <h1>SAGE</h1>
+      <h4 className='homeh4'>Student Advising and Guidance Engine</h4>
+      <div className="search-container" ref={searchContainerRef}>
+        <input type="text" placeholder="  get sage advice..." />
+        
+        <Link href="/chatpage">
+          <button type="submit"></button>
+        </Link>
+        
       </div>
     </div>
   );

@@ -1,10 +1,15 @@
 "use client"; // This is a client component 
-import React, { useEffect, useRef } from 'react';
 import Link from 'next/link';
+import React, { useEffect, useRef, useState } from 'react';
+
 import Navbar from '../components/RoundedNavbar';
+import ThemeButton from '../components/ThemeButton';
+
+const themes = ['green', 'blue', 'purple'];
 
 const Home = () => {
   const searchContainerRef = useRef<HTMLDivElement>(null);
+  const [theme, setTheme] = useState<string>(themes[0]);
 
   useEffect(() => {
     const adjustSearchContainerPosition = () => {
@@ -27,9 +32,32 @@ const Home = () => {
     };
   }, []);
 
+  useEffect(() => {
+    // Log the current theme whenever it changes
+    console.log('Current theme:', theme);
+  }, [theme]);
+
   return (
-    <div className="relative overflow-y-scroll h-screen">
+    <div className={`relative overflow-y-scroll h-screen theme-${theme}`}>
       <Navbar />
+      <ThemeButton />
+      <div className='flex flex-col'>
+        <h3 className='font-semibold'>Select theme:</h3>
+        <div className="flex gap-4">
+          {themes.map((t) => (
+            <div 
+              className='cursor-pointer' 
+              key={t} 
+              onClick={() => {
+                console.log('Setting theme to:', t); // Log when a theme button is clicked
+                setTheme(t);
+              }}
+            >
+              {t}
+            </div>
+          ))}
+        </div>
+      </div>
       <div className="bg-dark-purple opacity-50 w-5/6 fixed left-1/2 top-24 transform -translate-x-1/2 rounded-3xl h-[70vh] md:h-[80vh] lg:h-[90vh] p-6">
         <div className="flex flex-col items-center relative h-full justify-center">
           <h1 className="text-white text-9xl md:text-8xl lg:text-9xl font-maharlika">

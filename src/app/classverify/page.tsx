@@ -4,6 +4,7 @@ import './verify.css';
 import Navbar from '../components/RoundedNavbar';
 import RoundedBack from '../components/RoundedBackground.js';
 import PopUp from '../components/PopUp';
+import { useTheme } from '../context/themeContext';
 
 const initialCourses = [
   { term: 'Spring 2024', courses: ['CS XXXX - SOFTWARE BLAH BLAH', 'CS XXXX - SOFTWARE BLAH BLAH', 'CS XXXX - SOFTWARE BLAH BLAH'] },
@@ -11,6 +12,7 @@ const initialCourses = [
 ];
 
 const Verify = () => {
+  const {theme} = useTheme()
   const [courses, setCourses] = useState(initialCourses);
   const [isPopupVisible, setIsPopupVisible] = useState(false);
 
@@ -26,7 +28,7 @@ const Verify = () => {
       setIsPopupVisible(true);
     }
   };
-
+ 
   return (
     <div className='upload'>
       <Navbar />

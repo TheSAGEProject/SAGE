@@ -5,6 +5,7 @@ import RoundedBack from '../components/RoundedBackground';
 import Navbar from '../components/RoundedNavbar';
 import React, { useState, useEffect, useRef } from 'react';
 import RoundedBackChat from '../components/RoundedBackChat';
+import ThemeButton from '../components/ThemeButton';
 
 const Chat = () => {
   const [messages, setMessages] = useState([
@@ -78,6 +79,7 @@ const Chat = () => {
   return (
     <div className="chat-container ">
       <Navbar />
+      <ThemeButton></ThemeButton>
       <div className='bg-dark-purple opacity-50 w-5/6 fixed left-1/2 top-24 transform -translate-x-1/2 rounded-3xl h-[70vh] md:h-[80vh] lg:h-[90vh] p-6'>
         <div className="chat-output" ref={chatOutputRef}>
           {messages.map((message, index) => (

@@ -4,6 +4,7 @@ import { useUser } from '@auth0/nextjs-auth0/client'; // Correct import
 import Navbar from '../components/RoundedNavbar';
 import RoundedBack from '../components/RoundedBackground';
 import LogoutButton from '../components/LogoutButton';
+import ThemeButton from "../components/ThemeButton";
 
 const Profile = () => {
   const { user, error, isLoading } = useUser(); // Use the correct hook
@@ -26,9 +27,9 @@ const Profile = () => {
   return (
     user ? (
       <main className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
-        
+        <ThemeButton></ThemeButton>
         <Navbar />
-
+        
         <div className="bg-dark-purple opacity-50 w-5/6 fixed left-1/2 top-24 transform -translate-x-1/2 rounded-3xl h-[70vh] md:h-[80vh] lg:h-[90vh] p-6">
           <div className="flex  bg-white shadow-md rounded-lg overflow-hidden p-6 max-w-2xl w-full absolute top-1/4 left-[770px]">
             <div className="flex flex-col items-center pr-6 border-r border-gray-200 w-1/3">

@@ -30,7 +30,7 @@
     "**/*.tsx",
     "src/degreeplan/DegreePlan.js",
     ".next/types/**/*.ts"
-, "src/app/components/RoundedNavbar.js"  ],
+, "src/app/components/RoundedNavbar.js", "src/app/context/themeContext/index.js"  ],
   "exclude": [
     "node_modules"
   ]

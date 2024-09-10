@@ -7,6 +7,7 @@ import Navbar from '../components/RoundedNavbar';
 import RoundedBack from '../components/RoundedBackground.js';
 import { useAuth0 } from '@auth0/auth0-react';
 import { handleFileChange, handleUpload } from './transcript'; // Import the functions
+import ThemeButton from '../components/ThemeButton';
 
 const Transcript = () => {
   const { user } = useAuth0();
@@ -16,6 +17,7 @@ const Transcript = () => {
 
   return (
     <div className='upload'>
+      <ThemeButton></ThemeButton>
       <Navbar />
       <div className='bg-dark-purple opacity-50 w-5/6 fixed left-1/2 top-24 transform -translate-x-1/2 rounded-3xl h-[70vh] md:h-[80vh] lg:h-[90vh] p-6'>
         <div className='text'>

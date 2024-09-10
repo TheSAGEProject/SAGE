@@ -2,6 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+.theme-purple {
+  background: 
+    linear-gradient(150deg, #eec5f8, rgba(255, 0, 0, 0) 70.71%) !important,
+    linear-gradient(300deg, #9d6ac7, rgba(0, 255, 0, 0) 70.71%) !important,
+    linear-gradient(30deg, #430b5f, rgba(0, 0, 255, 0) 70.71%) !important;
+}
+
+.theme-green {
+  background: 
+    linear-gradient(150deg, #ccedcb, rgba(255, 0, 0, 0) 70.71%) !important,
+    linear-gradient(300deg, #62946B, rgba(0, 255, 0, 0) 70.71%) !important,
+    linear-gradient(30deg, #2a694a, rgba(0, 0, 255, 0) 70.71%) !important;
+}
+
+.theme-blue {
+  background: 
+    linear-gradient(150deg, #cbceed, rgba(255, 0, 0, 0) 70.71%) !important,
+    linear-gradient(300deg, #516ad0, rgba(0, 255, 0, 0) 70.71%) !important,
+    linear-gradient(30deg, #0a2c8a, rgba(0, 0, 255, 0) 70.71%) !important;
+}
 
 @font-face {
   font-family: 'Raleway';
@@ -25,12 +45,15 @@ html, body {
   padding: 0;  
 }
 
-html, body {
-  background: 
+@layer base{
+  :root{
+    background: 
       linear-gradient(150deg, #ccedcb, rgba(255, 0, 0, 0) 70.71%),
       linear-gradient(300deg, #62946B, rgba(0, 255, 0, 0) 70.71%),
       linear-gradient(30deg, #2a694a, rgba(0, 0, 255, 0) 70.71%);
+  }
 }
+
 
 
 

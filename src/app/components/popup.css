@@ -10,7 +10,7 @@ input[type="text"] {
 
 input[type=submit] {
     width: 100%;
-    background-color: #2E1F31;
+    background-color: #71ad6f;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -21,7 +21,7 @@ input[type=submit] {
 
 
 input[type=submit]:hover {
-    background-color: #3c0b3c;
+    background-color: #38343a;
   }
 
   ::placeholder {

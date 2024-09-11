@@ -98,9 +98,9 @@ const Semester = ({ season, year, classes = [], onRemoveFromPreviousSemester , s
   };
 
   return (
-    <div className='semester'>
-      <div className='semseter-header-container'>
-        <p className='semesterHeader generalFont'>{season} {year}</p>
+    <div className='m-5 bg-[#f9f7f7] rounded-[30px] relative flex justify-start overflow-y-scroll overflow-x-hidden p-40 pl-[300px] pb-[250px] min-w-[150px] w-[90%] items-center scrollbar-thin '>
+      <div className='mb-3'>
+        <p className='absolute top-[9px] left-[25px] tracking-[-1px] font-semibold text-[2.1rem]  text-dark-green font-raleway' style={{"fontWeight": 700}}>{season} {year}</p>
       </div>
       <BoxTarget onDrop={handleDrop}>
         {droppedClasses.map((classItem) => (

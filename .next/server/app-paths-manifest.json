@@ -1,4 +1,9 @@
 {
   "/homepage/page": "app/homepage/page.js",
-  "/chatpage/page": "app/chatpage/page.js"
+  "/page": "app/page.js",
+  "/api/auth/[auth0]/route": "app/api/auth/[auth0]/route.js",
+  "/transcript/page": "app/transcript/page.js",
+  "/chatpage/page": "app/chatpage/page.js",
+  "/degreeplan/page": "app/degreeplan/page.js",
+  "/profile/page": "app/profile/page.js"
 }

@@ -1,0 +1,115 @@
+
+
+.box {
+    box-sizing: border-box;
+    background-color: rgba(126, 126, 126, 0.7);
+    border-radius: 30px;
+    width: 93.5%; /* Adjust width as needed */
+    height: 92.9%; /* Adjust height as needed */
+  
+    /* Centering the box horizontally and vertically */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  body{
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+  }
+  
+  
+  .slide {
+    background-color: rgba(126, 126, 126, 0.7);
+    height: 100%;
+    width: 180px;
+    position: absolute;
+    transition: 0.5s ease;
+    transform: translateX(-230px);
+    
+  }
+  
+  h1 {
+    color: white;
+    text-align: right;
+    padding: 10px 0px;
+    padding-right: 30px;
+    pointer-events: none;
+    font-family: 'SudoVar';
+  }
+  
+  .sidebar {
+    display: none;
+    visibility: hidden;
+    -webkit-appearance: none;
+  
+  }
+  
+  .toggle {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    top: 128px;
+    left: 25px;
+    z-index: 1;
+    cursor: pointer;
+    border-radius: 2px;
+    background-color: rgba(126, 126, 126, 0.7);
+  }
+  
+  .toggle .common{
+    position: absolute;
+    height: 2px;
+    width: 20px;
+    background-color: white;
+    border-radius: 50px;
+    transition: 0.3s ease;
+  }
+  
+  .toggle .top_line {
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .toggle .middle_line {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .toggle .bottom_line {
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .sidebar:checked ~ .toggle .top_line{
+    left: 2px;
+    top: 14px;
+    width: 25px;
+    transform: rotate(45deg);
+  }
+  .sidebar:checked ~ .toggle .bottom_line{
+    left: 2px;
+    top: 14px;
+    width: 25px;
+    transform: rotate(-45deg);
+  }
+  .sidebar:checked ~ .toggle .middle_line{
+    opacity: 0;
+  }
+  
+  .sidebar:checked ~ .slide {
+    transform: translateX(0);
+    transform: translateY(4.85%);
+    height: 87.5%;
+    border-radius: 0 0 0 30px;
+  }
+  
+  

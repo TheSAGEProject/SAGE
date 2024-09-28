@@ -2,9 +2,11 @@
 import React, { useEffect, useRef } from 'react';
 import Link from 'next/link';
 import Navbar from '../components/RoundedNavbar';
+import { useRouter } from 'next/navigation'
 
 const Home = () => {
   const searchContainerRef = useRef<HTMLDivElement>(null);
+  const router = useRouter();
 
   useEffect(() => {
     const adjustSearchContainerPosition = () => {
@@ -22,11 +24,19 @@ const Home = () => {
     adjustSearchContainerPosition();
     window.addEventListener('resize', adjustSearchContainerPosition);
 
+
     return () => {
       window.removeEventListener('resize', adjustSearchContainerPosition);
     };
   }, []);
 
+  
+  const handleChatClick = () => {
+    const inputElement = document.getElementById('start-msg') as HTMLInputElement;
+    const message = inputElement.value;
+    sessionStorage.setItem('first-message', message);
+    router.push('/chatpage');
+  };
   return (
     <div className="relative overflow-y-scroll h-screen">
       <Navbar />
@@ -42,14 +52,15 @@ const Home = () => {
             <div className="relative w-3/4 lg:w-1/2">
               <input
                 type="text"
+                id="start-msg"
                 placeholder="  get sage advice..."
                 className="font-sudo w-full py-4 px-4 rounded-full border border-gray-300 text-xl pr-16 shadow-[inset_0_-2px_4px_rgba(0,0,0,0.6)]"
               />
-              <Link href="/chatpage">
-                <button type="submit" className="absolute right-0 top-0 mt-2 mr-2 bg-blue-500 text-dark-purple py-2 px-4 rounded-full">
-                  <img src='Psend.png' className='w-10 h-10'/>
-                </button>
-              </Link>
+
+              <button type="submit" onClick={handleChatClick} className="absolute right-0 top-0 mt-2 mr-2 bg-blue-500 text-dark-purple py-2 px-4 rounded-full">
+                 <img src='Psend.png' className='w-10 h-10'/>
+              </button>
+              
             </div>
           </div>
         </div>

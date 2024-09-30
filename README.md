@@ -8,12 +8,10 @@ Have you ever asked your advisor a question only to wait weeks for a response? M
 
 ## Tech Stack
 * React.js
-* Express.js
 * Tailwind CSS
 * Next.js
 * TypeScript
 * AWS
-  * Textract
   * DynamoDB
   * SNS and SQS
   * S3
@@ -24,37 +22,6 @@ Have you ever asked your advisor a question only to wait weeks for a response? M
   * Pinecone
   * Claude3
   
-## Meet the Team
-
-* Project Director: Abis Naqvi
-
-* Chatbot Team
-   * Team Lead: Ethan Varghese
-     * Evan Wright
-     * Byron Rodas
-     * Alan Roybal
-
-* AWS Team
-  * Team Lead: Ram Gudur
-    * Vidur Nangia
-    * Vidur Nangia
-    * Jason Luu
-    * Adrian Tran
-    * Nicholas Remack 
-    * Adrian Tran
-    
-* Expansion Team
-  * Team Lead: Maruthi Eranki
-    * Zain Mirza
-    * Aneesh Dara
-    * Syed Kazmi
-   
-* Design Team
-  * Team Lead: Shraddha Subash
-    * Jeevika Balaji
-    * Sushant Ganji
-    * Abhishek Madhavan
-    * Abhishek Madhavan
     
 ## Coming 2024!
 
